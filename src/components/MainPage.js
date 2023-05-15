@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import WordFrequency from './WordFrequency';
+import HistogramData from './HistogramData';
 
 const MainPage = () => {
   const [data, setData] = useState('');
@@ -28,6 +30,16 @@ const MainPage = () => {
       {data && (
         <div className="bg-white text-black p-4 rounded-lg w-full max-w-3xl overflow-x-hidden mb-2">
           <pre className="whitespace-pre-wrap">{data}</pre>
+          <br />
+          <br />
+          <h2 className="flex flex-col items-center text-2xl text-indigo-700 font-bold">
+            Enter a word to check its Frequency :
+          </h2>
+          <WordFrequency />
+          <h2 className="flex flex-col items-center text-2xl text-indigo-700 font-bold">
+            Histogram:
+          </h2>
+          <HistogramData />
         </div>
       )}
     </div>
