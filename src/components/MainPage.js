@@ -39,7 +39,7 @@ const MainPage = () => {
             <br/>
             <br/>
           <h2 className="flex flex-col items-center text-2xl text-indigo-700 font-bold">
-            Histogram:
+             Most occurring words:
           </h2>
           <HistogramData />
         </div>
