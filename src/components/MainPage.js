@@ -36,6 +36,8 @@ const MainPage = () => {
             Enter a word to check its Frequency :
           </h2>
           <WordFrequency />
+            <br/>
+            <br/>
           <h2 className="flex flex-col items-center text-2xl text-indigo-700 font-bold">
             Histogram:
           </h2>
